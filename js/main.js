@@ -12,6 +12,16 @@ $(document).ready(function($) {
 	};
 	loader();
 
+	
+	
+	var newsletter = () => {
+		var btn = document.getElementById("modalBtn");
+		btn.onclick = (() => {
+			$("#myModal").modal('show');
+		})
+	}
+	newsletter();
+
 	var carousel = function() {
 		$('.owl-carousel').owlCarousel({
 			loop: true,
